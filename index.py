@@ -1,7 +1,7 @@
 from generate_string import StringGenerator
 from huffman import HuffmanCoding
 
-filePath = './text.txt'
+filePath = './files/text.txt'
 stringGenerator = StringGenerator(100)
 stringGenerator.generateRandomSequence()
 stringGenerator.saveString(filePath)
