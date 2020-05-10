@@ -106,7 +106,7 @@ class HuffmanCoding:
 
     def compress(self):
         filename, file_extension = os.path.splitext(self.path)
-        output_path = filename + "_compressed.bin"
+        output_path = filename + "_huffman_compressed.bin"
 
         with open(self.path, 'r+') as file, open(output_path, 'wb') as output:
             text = file.read()
@@ -153,7 +153,7 @@ class HuffmanCoding:
 
     def decompress(self, input_path):
         filename, file_extension = os.path.splitext(self.path)
-        output_path = filename + "_decompressed" + ".txt"
+        output_path = filename + "_huffman_decompressed" + ".txt"
 
         with open(input_path, 'rb') as file, open(output_path, 'w') as output:
             bit_string = ""
