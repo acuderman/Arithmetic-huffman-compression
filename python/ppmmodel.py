@@ -4,9 +4,8 @@
 # 
 # https://www.nayuki.io/page/reference-arithmetic-coding
 # https://github.com/nayuki/Reference-arithmetic-coding
-# 
-
-import arithmeticcoding
+#
+from python import arithmeticcoding
 
 
 class PpmModel:

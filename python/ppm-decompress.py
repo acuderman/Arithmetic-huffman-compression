@@ -11,10 +11,11 @@
 # 
 
 import sys
-import arithmeticcoding, ppmmodel
 
 
 # Must be at least -1 and match ppm-compress.py. Warning: Exponential memory usage at O(257^n).
+from python import arithmeticcoding, ppmmodel
+
 MODEL_ORDER = 3
 
 
