@@ -4,7 +4,7 @@ from python.adaptive_arithmetic_compress import adaptiveArithmeticCompress
 from python.arithmetic_compress import arithmeticCompress
 from pathlib import Path
 
-def generateStrings(stringLength):
+def generateString(stringLength):
     filePath = './files/text-{}.txt'.format(str(stringLength))
     stringGenerator = StringGenerator(stringLength)
     stringGenerator.generateRandomSequence()
@@ -13,12 +13,12 @@ def generateStrings(stringLength):
     return filePath
 
 
-string100 = generateStrings(100)
-string1000 = generateStrings(1000)
-string10000 = generateStrings(10000)
-string100000 = generateStrings(100000)
-string1000000 = generateStrings(1000000)
-string10000000 = generateStrings(10000000)
+string100 = generateString(100)
+string1000 = generateString(1000)
+string10000 = generateString(10000)
+string100000 = generateString(100000)
+string1000000 = generateString(1000000)
+string10000000 = generateString(10000000)
 
 print('Huffman - Start')
 
@@ -70,9 +70,9 @@ def compareFileSizes(stringLength):
     print((Path(huffmanCompressedFile).stat().st_size / Path(arithmeticCompressedFile).stat().st_size) * 100)
     print('------------------------------------------------------------------------------------')
 
-string100 = compareFileSizes(100)
-string1000 = compareFileSizes(1000)
-string10000 = compareFileSizes(10000)
-string100000 = compareFileSizes(100000)
-string1000000 = compareFileSizes(1000000)
-string10000000 = compareFileSizes(10000000)
+compareFileSizes(100)
+compareFileSizes(1000)
+compareFileSizes(10000)
+compareFileSizes(100000)
+compareFileSizes(1000000)
+compareFileSizes(10000000)
